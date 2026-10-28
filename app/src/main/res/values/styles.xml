@@ -1,0 +1,332 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+        <item name="android:spinnerDropDownItemStyle">@style/CustomSpinnerItemStyle</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Translucate" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#ffffff</item>
+        <item name="strokeColor">#848484</item>
+        <item name="pageColor">#c9c8c8</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="radius">5dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="CustomSpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <!-- Button Style -->
+
+    <style name="IconFlatWaveButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@null</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="rd_rippleColor">#11000000</item>
+    </style>
+
+    <style name="FlatButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@null</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="FlatWaveButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@null</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="FlatColorButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@null</item>
+        <item name="rd_backgroundColor">#33219AFF</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="FlatWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@null</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="RaiseButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@drawable/button_rounded_white</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="RaiseWaveButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@drawable/button_rounded_white</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="RaiseColorButtonRippleStyle" parent="Material.Drawable.Ripple.Touch.Light">
+        <item name="android:background">@drawable/button_rounded_blue</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="RaiseWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@drawable/button_rounded_blue</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="SegmentButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="ImageWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@drawable/button_icon_blue</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_cornerRadius">16dp</item>
+    </style>
+
+    <style name="ImageProviderStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@drawable/background_bank_logo</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_cornerRadius">6dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+
+    <style name="CircleWaveColorButtonRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@drawable/circle_solid_blue_32x32</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_cornerRadius">32dp</item>
+    </style>
+
+    <!-- TabPageIndicator -->
+
+    <style name="TabPageIndicator" parent="Material.Widget.TabPageIndicator.Light">
+        <item name="tpi_tabPadding">12dp</item>
+        <item name="tpi_tabRipple">@style/TabRippleStyle</item>
+        <item name="tpi_indicatorHeight">2dp</item>
+        <item name="android:textAppearance">@style/TabTextAppearance</item>
+        <item name="tpi_indicatorColor">#FFFFFF</item>
+        <item name="tpi_mode">fixed</item>
+        <item name="android:background">#1561ac</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Subhead">
+        <item name="android:textColor">@drawable/color_tpi</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="TabRippleStyle" parent="Material.Drawable.Ripple.Wave">
+        <item name="android:background">@null</item>
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_rippleAnimDuration">300</item>
+        <item name="rd_maskType">rectangle</item>
+        <item name="rd_cornerRadius">0dp</item>
+        <item name="rd_padding">0dp</item>
+    </style>
+
+    <style name="MenuItemRippleStyle" parent="Material.Drawable.Ripple.Wave">
+        <item name="rd_rippleColor">#11000000</item>
+        <item name="rd_rippleAnimDuration">200</item>
+        <item name="rd_maskType">rectangle</item>
+        <item name="rd_cornerRadius">0dp</item>
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <!-- Progress Style -->
+
+    <style name="CircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">#FF3F8AF8</item>
+    </style>
+
+    <style name="ColorsCircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColors">@array/progress_colors</item>
+    </style>
+
+    <style name="InOutCircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_inAnimDuration">800</item>
+        <item name="cpd_inStepPercent">0.5</item>
+        <item name="cpd_inStepColors">@array/in_colors</item>
+        <item name="cpd_outAnimDuration">400</item>
+    </style>
+
+    <style name="InOutColorsCircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_inAnimDuration">800</item>
+        <item name="cpd_inStepPercent">0.5</item>
+        <item name="cpd_inStepColors">@array/in_colors</item>
+        <item name="cpd_outAnimDuration">400</item>
+        <item name="cpd_strokeColors">@array/progress_colors</item>
+    </style>
+
+    <style name="DeterminateInOutCircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress.Determinate">
+        <item name="cpd_inAnimDuration">400</item>
+        <item name="cpd_outAnimDuration">400</item>
+        <item name="cpd_initialAngle">-90</item>
+    </style>
+
+    <style name="DeterminateCircularProgressDrawableStyle" parent="Material.Drawable.CircularProgress.Determinate">
+        <item name="cpd_inAnimDuration">0</item>
+        <item name="cpd_outAnimDuration">0</item>
+        <item name="cpd_initialAngle">-90</item>
+    </style>
+
+    <style name="LinearProgressDrawableStyle" parent="Material.Drawable.LinearProgress">
+        <item name="lpd_strokeSecondaryColor">#00000000</item>
+    </style>
+
+    <style name="ColorsLinearProgressDrawableStyle" parent="Material.Drawable.LinearProgress">
+        <item name="lpd_strokeColors">@array/progress_colors</item>
+        <item name="lpd_strokeSecondaryColor">#00000000</item>
+    </style>
+
+    <style name="DeterminateLinearProgressDrawableStyle" parent="Material.Drawable.LinearProgress.Determinate">
+        <item name="lpd_strokeColor">#FF4389F3</item>
+        <item name="lpd_strokeSecondaryColor">#FFB6CDF2</item>
+    </style>
+
+    <style name="QueryLinearProgressDrawableStyle" parent="Material.Drawable.LinearProgress.Query">
+        <item name="lpd_strokeColor">#FF4389F3</item>
+        <item name="lpd_strokeSecondaryColor">#FFB6CDF2</item>
+    </style>
+
+    <style name="BufferLinearProgressDrawableStyle" parent="Material.Drawable.LinearProgress.Buffer">
+        <item name="lpd_strokeColor">#FF4389F3</item>
+        <item name="lpd_strokeSecondaryColor">#FFB6CDF2</item>
+        <item name="lpd_travelDuration">400</item>
+        <item name="lpd_transformDuration">400</item>
+        <item name="lpd_keepDuration">100</item>
+    </style>
+
+    <!-- LinearLayout -->
+
+    <style name="LinearLayoutRippleStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="rd_rippleColor">#11000000</item>
+    </style>
+
+    <!-- PickerDialog -->
+
+    <style name="DatePickerDialogStyle" parent="Material.App.Dialog.DatePicker">
+        <item name="dp_selectionColor">#1561ac</item>
+        <item name="dp_headerPrimaryColor">#1561ac</item>
+        <item name="dp_headerSecondaryColor">#1561ac</item>
+        <item name="dp_textColor">#000</item>
+        <item name="dp_textHighlightColor">#fff</item>
+        <item name="di_actionTextColor">#1561ac</item>
+        <item name="dp_textLabelColor">#000</item>
+        <item name="dp_textDisableColor">#9f9f9f</item>
+        <item name="di_backgroundColor">@color/background_floating_material_light</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="CustomSpinnerStyle" parent="Material.Widget.Spinner.Light">
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="ArrowSpinnerStyle" parent="IconTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:text">@string/ion_android_arrow_dropdown</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--<style name="AppSearchView" parent="Widget.AppCompat.SearchView.ActionBar">-->
+        <!--<item name="layout">@layout/searchview_customized</item>-->
+        <!--<item name="iconifiedByDefault">false</item>-->
+        <!--<item name="queryHint">search_hint</item>-->
+        <!--<item name="android:focusable">false</item>-->
+        <!--<item name="searchIcon">@drawable/ic_search_gray_24dp</item>-->
+        <!--<item name="closeIcon">@drawable/ic_clear_gray_24dp</item>-->
+    <!--</style>-->
+
+    <style name="RadioButtonStyle" parent="Material.Drawable.RadioButton">
+        <item name="rbd_strokeSize">1dp</item>
+        <item name="rbd_strokeColor">@color/colorPrimary</item>
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:background="@drawable/dialog_background"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_list_items_title_textView"
+            style="@style/Body2TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Thông báo"
+            android:textColor="@color/text_normal"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/dialog_list_items_close_button"
+            style="@style/IconButtonStyle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="@string/ion_ios_close_empty"
+            android:textColor="@color/text_blur"
+            android:textSize="32dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dialog_list_items_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4dp"
+        android:listSelector="@null"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scrollbars="none"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIVIDER_HEIGHT"
+        android:background="#c9c9c9"/>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/dialog_list_items_confirm_button"
+        style="@style/FlatWaveButtonRippleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BUTTON_HEIGHT"
+        android:text="OK"
+        android:textColor="@color/text_dark"/>
+
+</LinearLayout>

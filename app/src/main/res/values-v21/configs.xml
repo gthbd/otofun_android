@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="NOTIFICATION_PADDING_TOP">8dp</dimen>
+</resources>

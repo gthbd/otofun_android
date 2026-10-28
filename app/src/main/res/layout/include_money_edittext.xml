@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/EDITTEXT_HEIGHT"
+              android:background="@drawable/edittext_background_solid_white"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/EDITTEXT_BOTTOM_SPACING">
+
+    <EditText
+        android:id="@+id/include_money_edittext_editText"
+        style="@style/NumberTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:ems="10"
+        android:hint="0"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColor="@color/text_dark"
+        android:textColorHint="@color/text_normal">
+
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/include_money_edittext_unit_textView"
+        style="@style/NumberTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/text_bright_blue"/>
+
+
+</LinearLayout>

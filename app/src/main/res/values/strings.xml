@@ -1,0 +1,185 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--<string name="app_name">vStock</string>-->
+
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="english">English</string>
+
+    <string name="buttonPay">Pay</string>
+    <string name="buttonLater">Later</string>
+    <string name="buttonUpdate">Update</string>
+
+    <string name="button_1day">1 day</string>
+    <string name="button_1month">1 month</string>
+    <string name="button_3month">3 month</string>
+    <string name="button_6month">6 month</string>
+    <string name="button_1year">1 year</string>
+    <string name="button_2year">2 year</string>
+    <string name="button_fulltime">All</string>
+    <string name="button_othertime">Option</string>
+
+    <string name="label_today">Now</string>
+    <string name="label_sunday">Sun</string>
+    <string name="label_monday">Mon</string>
+    <string name="label_tuesday">Tue</string>
+    <string name="label_wednesday">Wed</string>
+    <string name="label_thursday">Thu</string>
+    <string name="label_friday">Fri</string>
+    <string name="label_satusday">Sat</string>
+
+    <string name="label_month">month</string>
+    <string name="last_update">Last update</string>
+
+    <string name="naviTitleHome">Home</string>
+    <string name="naviTitleBangHNX">HNX</string>
+    <string name="naviTitleBangHOSE">HOSE</string>
+    <string name="naviTitleBangUPCOM">UPCOM</string>
+    <string name="naviTitleBangDANHMUC">My Board</string>
+    <string name="naviTitleBangTuyChon">My boards</string>
+    <string name="naviTitleChartOnline">Real-time Charts</string>
+    <string name="naviTitleChartHistory">History Charts</string>
+    <string name="naviTitleListStockHOSE">Change list in HOSE Quote</string>
+    <string name="naviTitleListStockHNX">Change list in HNX Quote</string>
+    <string name="naviTitleNews">Market news</string>
+    <string name="naviNews">News</string>
+    <string name="naviWebContent">Web content</string>
+    <string name="naviTitleSettings">Settings</string>
+    <string name="naviTitlePaymentCard">Remove Ad by mobile card</string>
+    <string name="naviTitleListHot">List very hot on vStock</string>
+
+    <string name="buttonShowHistoryData">Show chart history of</string>
+    <string name="buttonDelete">Delete</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="buttonDone">Done</string>
+    <string name="buttonSelect">Select</string>
+    <string name="buttonAddStock">Add a stock</string>
+    <string name="buttonSelectStock">Select a stock</string>
+    <string name="buttonMainMenu">Menu</string>
+    <string name="buttonChartLive">Charts</string>
+    <string name="buttonHistory">History</string>
+    <string name="buttonSetting">Setting</string>
+    <string name="buttonThaoTruong">Thao trường</string>
+    <string name="buttonTinTuc">News</string>
+    <string name="buttonHistoryChart">History Chart</string>
+    <string name="buttonChiTietTinTuc">News detail</string>
+    <string name="buttonChiTietCongty">Company detail</string>
+    <string name="buttonChiTietStock">Stock detail</string>
+    <string name="buttonChiTiet">Detail</string>
+    <string name="buttonClose">Close</string>
+    <string name="buttonOK">OK</string>
+    <string name="buttonOpen">Open</string>
+    <string name="buttonMessage">Send message</string>
+    <string name="buttonUserGuide">User Guide</string>
+    <string name="buttonExitApp">Exit App</string>
+    <string name="buttonUpdateAppstore">Update from AppStore</string>
+    <string name="buttonCheckIsInterested">Check Interested</string>
+    <string name="buttonUnCheckIsInterested">UnCheck Interested</string>
+    <string name="buttonCreateQuote">Create new quote</string>
+    <string name="buttonEditQuote">Edit quote name</string>
+
+    <string name="labelPrice">Price</string>
+    <string name="labelKL">VOL</string>
+    <string name="labelGT">VAL</string>
+    <string name="labelInputQuoteName">Enter quote name here</string>
+    <string name="labelDeleteQuote">Remove table</string>
+
+    <string name="labelMaCK">Sym</string>
+    <string name="labelThamChieu">Ref</string>
+    <string name="labelTran">Ceil</string>
+    <string name="labelSan">Floor</string>
+    <string name="labelCaoNhat">High</string>
+    <string name="labelThapNhat">Low</string>
+    <string name="labelMua1">Bid 1</string>
+    <string name="labelMua2">Bid 2</string>
+    <string name="labelMua3">Bid 3</string>
+    <string name="labelBan1">Ask 1</string>
+    <string name="labelBan2">Ask 2</string>
+    <string name="labelBan3">Ask 3</string>
+    <string name="labelKQKhop">Trade</string>
+    <string name="labelCongTru">+/-</string>
+    <string name="labelTongKLGD">Total Vol</string>
+    <string name="labelGDNNBuy"> For.Buy</string>
+    <string name="labelGDNNSell">For.Sell</string>
+    <string name="labelRecent">Recents</string>
+    <string name="labelStatus">Status</string>
+    <string name="labelOpen">Open</string>
+    <string name="labelClose">Close</string>
+    <string name="labelListStock">Stock list</string>
+    <string name="labelSelectStock">Select stock</string>
+    <string name="labelListHot">List very hot on vStock</string>
+    <string name="labelAddStock">Insert stock into quote</string>
+    <string name="labelAll3Quote">Total 3 quotes (HOSE, HNX, Upcom)</string>
+    <string name="labelHoseQuote">Hose quote</string>
+    <string name="labelHnxQuote">HNX quote</string>
+    <string name="labelUpcomQuote">Upcom quote</string>
+
+    <string name="labelCategoryIndex">Main indexes</string>
+    <string name="labelCategoryQuote">Category by quotes</string>
+    <string name="labelCategoryType">Category by type</string>
+
+    <string name="labelSelectSortType">Select sort type</string>
+    <string name="labelSortByABC">Sort by ABC</string>
+    <string name="labelSortByHighPrice">Sort by high price</string>
+
+    <string name="labelSelectShowPriceType">Select type show price</string>
+    <string name="labelShowPriceFull">Price show full</string>
+    <string name="labelShowPriceShort">Price show short (block)</string>
+
+    <string name="labelSendBySMS">Send by SMS</string>
+    <string name="labelSendByEmail">Send by Email</string>
+    <string name="labelClearCache">Clear all cache data</string>
+
+    <string name="labelTy">bil</string>
+    <string name="labelSecond">sec</string>
+    <string name="labelLangDisplay">Select Language:</string>
+    <string name="labelUpdateData">Time Update:</string>
+    <string name="labelDataServer">Data Server:</string>
+    <string name="labelServerNote">Note: select only backup server when main server error!</string>
+    <string name="labelErrorMessage">Send message error server or data to admin:</string>
+    <string name="labelMainServer">Main Server</string>
+    <string name="labelBackupServer">Backup Server</string>
+    <string name="labelSearchCode">Enter a symbol</string>
+    <string name="labelMainIndex">Index</string>
+    <string name="labelError">Error</string>
+    <string name="labelMessage">Notice</string>
+    <string name="labelWarning">Warning</string>
+    <string name="labelDeleteStock">Remove stock in board</string>
+
+    <string name="msgUpdatingDatabase">Updating database...</string>
+    <string name="msgErrorQuoteNameLong">Quote name is very long, max 64 characters</string>
+    <string name="msgErrorQuoteNameEmpty">Quote name is not empty</string>
+    <string name="msgErrorMaxQuote">Quote number max is 20, cannot still create new quote</string>
+    <string name="msgUpdatedSymbols">Updated symbols:</string>
+    <string name="msgGioiHanSoMa">This quote just max stocks count. You should remove each other stocks if you want insert new stocks</string>
+    <string name="msgYeuCauRestart">Restart application to update changes</string>
+    <string name="msgChangeLang">Bạn bấm OK để đóng App, sau đó mở lại để thay đổi ngôn ngữ\nTouch on OK button for exit app, and then reopen app to change language</string>
+    <string name="msgSendMessage">Select OK to close application and open application send message. Please detail description error. Thanks you very much!</string>
+    <string name="msgConnectingServer">Connecting to server...</string>
+    <string name="msgErrorNetwork">Network error...</string>
+    <string name="msgMaCKNull">Stock name is null, please retype in text box</string>
+    <string name="msgMaCKNotHaveInHA">not have in HNX</string>
+    <string name="msgMaCKNotHaveInHO">not have in HOSE</string>
+    <string name="msgMaCKNotHaveInUP">not have in Upcom</string>
+    <string name="msgMaCKNotHave">not exist</string>
+    <string name="msgGuideListQuote">This function allow you create many boards private, set name for board and insert symbols to board.\nTouch + button on menu bar to add new board.</string>
+    <string name="msgGuideAddStock">Touch + button on menu bar to add stock for board.</string>
+    <string name="msgNotHaveData">no data!</string>
+    <string name="msgClearCache">Touch OK to clear all data cache, app will restart</string>
+
+    <string name="msgCannotSendSMS">This device cannot send SMS</string>
+    <string name="msgSendSMSSuccess">Send SMS success</string>
+    <string name="msgSendSMSFail">Send SMS fail</string>
+
+    <string name="msgCannotSendMail">This device cannot send Mail</string>
+    <string name="msgSendMailSuccess">Send mail success</string>
+    <string name="msgSendMailFail">Send mail fai</string>
+    <string name="msgConfirmDeleteQuote">Confirm delete quote</string>
+    <string name="msgConfirmDeleteStock">Confirm delete stock</string>
+    <string name="msgErrorServerOrNetwork">Server error, please check network connection...</string>
+    <string name="msgConfirmExitApp">Exit app?</string>
+
+    <string name="common_warning_risk_app">Phiên bản ứng dụng hiện tại không hợp lệ (ứng dụng đã bị chỉnh sửa hoặc giả mạo). Bạn vui lòng cài đặt bản mới nhất từ Google Play</string>
+    <string name="common_warning_emulator_running">Chúng tôi không hỗ trợ chạy ứng dụng này trên máy ảo Android.</string>
+
+
+
+</resources>

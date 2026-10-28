@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/background_item_home"
+        android:elevation="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/list_item_home_icon_textView"
+            style="@style/IconTextStyle"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="10dp"
+            android:text="@string/ion_android_calendar"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="2dp"
+            android:textSize="34dp"
+            android:textColor="@color/background_main_dark"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/list_item_home_title_textView"
+                    style="@style/Body2TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:textSize="16dp"
+                    android:maxLines="1"
+                    android:textColor="@color/text_normal"
+                    android:text="XxXXXXXXXXXXX"/>
+
+                <TextView
+                    android:id="@+id/list_item_home_badge_textView"
+                    style="@style/Body2TextStyle"
+                    android:background="@drawable/background_badge_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:textSize="11dp"
+                    android:maxLines="1"
+                    android:textColor="@color/text_bright"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/list_item_home_detail_textView"
+                style="@style/Body1TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14dp"
+                android:maxLines="2"
+                android:text="XXXXXXXX"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIVIDER_HEIGHT"
+        android:layout_marginTop="0dp"
+        android:background="@null"/>
+
+</LinearLayout>

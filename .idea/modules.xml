@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/otofun_android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/otofun_android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/otofun_android.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/otofun_android.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/otofun_android.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/otofun_android.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/otofun_android.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/otofun_android.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/otofun_android.libraries.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/otofun_android.libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/patterned-edittext/otofun_android.libraries.patterned-edittext.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libraries/viewpagerindicator/otofun_android.libraries.viewpagerindicator.unitTest.iml" />
+    </modules>
+  </component>
+</project>

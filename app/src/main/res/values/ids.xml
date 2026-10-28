@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="services_button1" type="id"/>
+    <item name="services_button2" type="id"/>
+    <item name="services_button3" type="id"/>
+    <item name="services_button4" type="id"/>
+    <item name="services_button5" type="id"/>
+    <item name="services_button6" type="id"/>
+    <item name="services_button7" type="id"/>
+    <item name="services_button8" type="id"/>
+    <item name="services_button9" type="id"/>
+    <item name="services_button10" type="id"/>
+    <item name="services_button11" type="id"/>
+    <item name="services_button12" type="id"/>
+    <item name="services_button13" type="id"/>
+    <item name="services_button14" type="id"/>
+    <item name="services_button15" type="id"/>
+    <item name="services_button16" type="id"/>
+    <item name="services_button17" type="id"/>
+
+    <item name="drawer_item1" type="id"/>
+    <item name="drawer_item2" type="id"/>
+    <item name="drawer_item3" type="id"/>
+    <item name="drawer_item4" type="id"/>
+    <item name="drawer_item5" type="id"/>
+    <item name="drawer_item6" type="id"/>
+    <item name="drawer_item7" type="id"/>
+    <item name="drawer_item8" type="id"/>
+    <item name="drawer_item9" type="id"/>
+    <item name="drawer_item10" type="id"/>
+    <item name="drawer_item11" type="id"/>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D4AE79</color>
+    <color name="colorPrimaryDark">#361409</color>
+    <color name="colorAccent">#D4AE79</color>
+    
+    <color name="slash_status_bar_color">#ede8e2</color>
+    <color name="welcome_status_bar_color">#ebecef</color>
+    <color name="notification_color">#9e9e9e</color>
+
+    <color name="background_main">#D4AE79</color>
+    <color name="background_main_dark">#361409</color>
+    <color name="button">#361409</color>
+    <color name="background_white">#f2f2f2</color>
+    <color name="background_blue">#208FB5</color>
+    <color name="background_green">#33CC66</color>
+    <color name="background_red">#EE0000</color>
+    <color name="background_orange">#FF9900</color>
+    <color name="background_bright_blue">#208FB5</color>
+    <color name="background_bright_white">#fff</color>
+    <color name="background_very2_dark_gray">#222222</color>
+    <color name="background_very_dark_gray">#444444</color>
+    <color name="background_dark_gray">#666666</color>
+    <color name="background_gray">#888888</color>
+    <color name="background_dark_white">#EEEEEE</color>
+    <color name="status_bar_white">#f2f2f2</color>
+    <color name="status_bar_blue">#208FB5</color>
+    <color name="status_bar_green">#33CC66</color>
+    <color name="text_normal">#801910</color>
+    <color name="text_bright">#fff</color>
+    <color name="text_dark">#361409</color>
+    <color name="text_gray">#747474</color>
+    <color name="text_blur">#949494</color>
+    <color name="text_blue">#208FB5</color>
+    <color name="text_red">#CC0000</color>
+    <color name="text_bright_blue">#0066CC</color>
+    <color name="text_orange">#CC6600</color>
+    <color name="text_free">#009900</color>
+    <color name="tab_background_normal">#208FB5</color>
+    <color name="tab_background_selected">#1a7186</color>
+    <color name="line_normal">#801910</color>
+    <color name="avatar_border">#FFF</color>
+    <color name="status_welcome_white">#f0f0f0</color>
+    <color name="status_welcome_blue">#208FB5</color>
+
+    <color name="dialog_failure">#B10009</color>
+    <color name="dialog_success">#009933</color>
+
+    <color name="credit_card_status_green">#33CC66</color>
+    <color name="credit_card_status_blue">#208FB5</color>
+    <color name="credit_card_status_red">#EE0000</color>
+    <color name="credit_card_status_gray">#E0E0E0</color>
+
+    <color name="background_tab_pressed">#208FB5</color>
+    <color name="background_tab">#208FB5</color>
+    <color name="shadow_color">#33000000</color>
+    <color name="tpi_checked">#FFFFFFFF</color>
+    <color name="tpi_unchecked">#99FFFFFF</color>
+    <color name="drawer_background">#208FB5</color>
+    <array name="progress_colors">
+        <item>#FF3F8AF8</item>
+        <item>#FFD8433C</item>
+        <item>#FFF2AF3A</item>
+        <item>#FF279B5E</item>
+    </array>
+    <array name="in_colors">
+        <item>#FFB5D4FF</item>
+        <item>#FFDEEAFC</item>
+        <item>#FFFAFFFE</item>
+    </array>
+
+    <array name="transaction_colors">
+        <item>#cccccc</item>
+        <item>#33CC66</item>
+        <item>#EE0000</item>
+        <item>#EE0000</item>
+        <item>#FF9900</item>
+        <item>#1FB4DA</item>
+    </array>
+    <color name="bg_blank">#DE003366</color>
+
+    <color name="fg_inactive_text">#9affffff</color>
+
+    <color name="bg_title_bar">#DE003366</color>
+    <color name="fg_title_bar">#ffFFFFFF</color>
+
+</resources>

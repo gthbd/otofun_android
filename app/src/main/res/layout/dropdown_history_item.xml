@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vn.otofun.views.RippleLinearLayout style="@style/LinearLayoutRippleStyle"
+                                  xmlns:android="http://schemas.android.com/apk/res/android"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center_vertical"
+                                  android:orientation="vertical"
+                                  android:paddingLeft="8dp"
+                                  android:paddingRight="8dp">
+
+    <TextView
+        android:id="@+id/dropdown_history_item_account_name_textView"
+        style="@style/Body2TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_dark"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/dropdown_history_item_account_number_textView"
+        style="@style/Body1TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/text_dark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIVIDER_HEIGHT"
+        android:layout_marginTop="8dp"
+        android:background="@color/line_normal"/>
+
+</com.vn.otofun.views.RippleLinearLayout>

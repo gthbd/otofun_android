@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="96dp"
+                android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/include_mobile_scale_off_imageView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/circle_stroke_white_96x96"
+        android:padding="8dp"
+        android:src="@drawable/mobifone"/>
+
+    <TextView
+        android:id="@+id/include_mobile_scale_off_textView"
+        style="@style/CaptionTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle_solid_orange_16x16"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Giảm 4%"
+        android:textColor="@color/text_bright"/>
+
+</RelativeLayout>

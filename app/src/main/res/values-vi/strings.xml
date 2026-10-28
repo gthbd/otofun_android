@@ -1,0 +1,179 @@
+<resources>
+    <!--<string name="app_name">vStock</string>-->
+
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="english">English</string>
+
+    <string name="buttonPay">Thanh toán</string>
+    <string name="buttonLater">Để sau</string>
+    <string name="buttonUpdate">Cập nhật</string>
+
+    <string name="button_1day">1 ngày</string>
+    <string name="button_1month">1 tháng</string>
+    <string name="button_3month">3 tháng</string>
+    <string name="button_6month">6 tháng</string>
+    <string name="button_1year">1 năm</string>
+    <string name="button_2year">2 năm</string>
+    <string name="button_fulltime">Tất cả</string>
+    <string name="button_othertime">Tùy chọn</string>
+
+    <string name="label_today">Hôm nay</string>
+    <string name="label_sunday">Chủ nhật</string>
+    <string name="label_monday">Thứ hai</string>
+    <string name="label_tuesday">Thứ ba</string>
+    <string name="label_wednesday">Thứ tư</string>
+    <string name="label_thursday">Thứ năm</string>
+    <string name="label_friday">Thứ sáu</string>
+    <string name="label_satusday">Thứ bảy</string>
+
+    <string name="label_month">Tháng</string>
+    <string name="last_update">Cập nhật cuối</string>
+
+    <string name="naviTitleHome">Trang chủ</string>
+    <string name="naviTitleBangHNX">Bảng điện HNX</string>
+    <string name="naviTitleBangHOSE">Bảng điện HOSE</string>
+    <string name="naviTitleBangUPCOM">Bảng điện UPCOM</string>
+    <string name="naviTitleBangDANHMUC">Bảng theo dõi riêng</string>
+    <string name="naviTitleBangTuyChon">Các bảng theo dõi riêng</string>
+    <string name="naviTitleChartOnline">Đồ thị Index</string>
+    <string name="naviTitleChartHistory">Đồ thị lịch sử</string>
+    <string name="naviTitleNews">Tin tức thị trường</string>
+    <string name="naviNews">Tin tức</string>
+    <string name="naviWebContent">Nội dung web</string>
+    <string name="naviTitleSettings">Cài đặt app</string>
+    <string name="naviTitlePaymentCard">Xoá QC bằng thẻ cào điện thoại</string>
+    <string name="naviTitleListHot">Hàng nóng trên vStock</string>
+
+    <string name="buttonShowHistoryData">Xem đồ thị giá quá khứ của</string>
+    <string name="buttonDelete">Xoá</string>
+    <string name="buttonCancel">Không</string>
+    <string name="buttonDone">Xong</string>
+    <string name="buttonSelect">Chọn</string>
+    <string name="buttonAddStock">Thêm mã chứng khoán</string>
+    <string name="buttonSelectStock">Chọn mã chứng khoán</string>
+    <string name="buttonMainMenu">Menu</string>
+    <string name="buttonChartLive">Đồ thị</string>
+    <string name="buttonHistory">Lịch sử</string>
+    <string name="buttonSetting">Cài đặt</string>
+    <string name="buttonThaoTruong">Thao trường</string>
+    <string name="buttonTinTuc">Tin tức</string>
+    <string name="buttonHistoryChart">Đồ thị lịch sử</string>
+    <string name="buttonChiTietTinTuc">Chi tiết tin tức</string>
+    <string name="buttonChiTietCongty">Chi tiết công ty</string>
+    <string name="buttonChiTietStock">Chi tiết mã</string>
+    <string name="buttonChiTiet">Chi tiết</string>
+    <string name="buttonClose">Đóng</string>
+    <string name="buttonOK">OK</string>
+    <string name="buttonOpen">Mở ra</string>
+    <string name="buttonMessage">Gửi tin nhắn</string>
+    <string name="buttonUserGuide">Hướng dẫn sử dụng</string>
+    <string name="buttonExitApp">Thoát vStock</string>
+    <string name="buttonUpdateAppstore">Cập nhật từ AppStore</string>
+    <string name="buttonCheckIsInterested">Đánh dấu theo dõi</string>
+    <string name="buttonUnCheckIsInterested">Bỏ đánh dấu theo dõi</string>
+    <string name="buttonCreateQuote">Tạo mới bảng điện</string>
+    <string name="buttonEditQuote">Sửa tên bảng điện</string>
+
+    <string name="labelPrice">Giá</string>
+    <string name="labelKL">KL</string>
+    <string name="labelGT">GT</string>
+    <string name="labelInputQuoteName">Nhập tên bảng</string>
+    <string name="labelDeleteQuote">Xoá bảng</string>
+
+    <string name="labelMaCK">Mã</string>
+    <string name="labelThamChieu">TC</string>
+    <string name="labelTran">Trần</string>
+    <string name="labelSan">Sàn</string>
+    <string name="labelCaoNhat">Cao</string>
+    <string name="labelThapNhat">Thấp</string>
+    <string name="labelMua1">Mua 1</string>
+    <string name="labelMua2">Mua 2</string>
+    <string name="labelMua3">Mua 3</string>
+    <string name="labelBan1">Bán 1</string>
+    <string name="labelBan2">Bán 2</string>
+    <string name="labelBan3">Bán 3</string>
+    <string name="labelKQKhop">Khớp</string>
+    <string name="labelCongTru">+/-</string>
+    <string name="labelTongKLGD">KLGD</string>
+    <string name="labelGDNNBuy">NN mua</string>
+    <string name="labelGDNNSell">NN bán</string>
+    <string name="labelRecent">Đã xem</string>
+    <string name="labelStatus">Trạng thái</string>
+    <string name="labelOpen">Mở cửa</string>
+    <string name="labelClose">Đóng cửa</string>
+    <string name="labelListStock">Danh sách mã chứng khoán</string>
+    <string name="labelSelectStock">Chọn mã chứng khoán</string>
+    <string name="labelListHot">Hàng nóng trên vStock</string>
+    <string name="labelAddStock">Thêm/bớt mã vào bảng</string>
+    <string name="labelAll3Quote">Toàn bộ 3 sàn (HOSE, HNX, Upcom)</string>
+    <string name="labelHoseQuote">Sàn Hose</string>
+    <string name="labelHnxQuote">Sàn HNX</string>
+    <string name="labelUpcomQuote">Sàn Upcom</string>
+    <string name="labelCategoryIndex">Các chỉ số chính</string>
+    <string name="labelCategoryQuote">Phân loại theo sàn giao dịch</string>
+    <string name="labelCategoryType">Phân loại theo nhóm ngành</string>
+
+    <string name="labelSelectSortType">Chọn kiểu sắp xếp các mã</string>
+    <string name="labelSortByABC">Theo thứ tự ABC</string>
+    <string name="labelSortByHighPrice">Theo giá cao nhất, KL cao nhất</string>
+
+    <string name="labelSelectShowPriceType">Chọn kiểu hiển thị giá, khối lượng</string>
+    <string name="labelShowPriceFull">Hiện đầy đủ  (Giá:21,500  KL:1,230)</string>
+    <string name="labelShowPriceShort">Hiện rút gọn (Giá:21,5    KL:123)</string>
+    <string name="labelSendBySMS">Gửi qua SMS</string>
+    <string name="labelSendByEmail">Gửi qua Email</string>
+    <string name="labelClearCache">Xoá hết dữ liệu cache</string>
+
+    <string name="labelTy">tỷ</string>
+    <string name="labelSecond">giây</string>
+    <string name="labelLangDisplay">Chọn ngôn ngữ:</string>
+    <string name="labelUpdateData">Cập nhật sau:</string>
+    <string name="labelDataServer">Server dữ liệu:</string>
+    <string name="labelServerNote">Chú ý: chỉ chọn server dự phòng khi server chính gặp trục trặc!</string>
+    <string name="labelErrorMessage">Gửi thông báo lỗi server hoặc dữ liệu:</string>
+    <string name="labelMainServer">Server chính</string>
+    <string name="labelBackupServer">Server dự phòng</string>
+    <string name="labelSearchCode">Tìm mã nhanh</string>
+    <string name="labelMainIndex">Index</string>
+    <string name="labelError">Lỗi</string>
+    <string name="labelMessage">Thông báo</string>
+    <string name="labelWarning">Cảnh báo</string>
+    <string name="labelDeleteStock">Xoá mã khỏi bảng điện</string>
+
+    <string name="msgUpdatingDatabase">Đang cập nhật cơ sở dữ liệu...</string>
+    <string name="msgErrorQuoteNameLong">Tên bảng điện quá dài, nhập tối đa 64 ký tự nhé</string>
+    <string name="msgErrorQuoteNameEmpty">Bạn chưa nhập tên bảng điện</string>
+    <string name="msgErrorMaxQuote">Số bảng điện không được nhiều hơn 20, bạn không được tạo mới nữa</string>
+    <string name="msgUpdatedSymbols">Đã cập nhật mã:</string>
+    <string name="msgGioiHanSoMa">Số mã trên bảng này đã đến giới hạn tối đa. Bạn phải xoá bớt nếu muốn thêm mã mới</string>
+    <string name="msgYeuCauRestart">Bạn cần khởi động lại ứng dụng để cập nhật các thay đổi</string>
+    <string name="msgChangeLang">Bạn bấm OK để đóng App, sau đó mở lại để thay đổi ngôn ngữ\nTouch on OK button for exit app, and then reopen app to change language</string>
+    <string name="msgSendMessage">Bạn chọn OK để đóng ứng dụng và mở trình gửi message. Làm ơn mô tả rõ lỗi trong message. Xin cảm ơn bạn nhiều!</string>
+    <string name="msgConnectingServer">Đang kết nối tới server...</string>
+    <string name="msgErrorNetwork">Lỗi mạng...</string>
+    <string name="msgMaCKNull">Mã chứng khoán chưa có trong ô text, hãy nhập lại</string>
+    <string name="msgMaCKNotHaveInHA">không có trong sàn HNX</string>
+    <string name="msgMaCKNotHaveInHO">không có trong sàn HOSE</string>
+    <string name="msgMaCKNotHaveInUP">không có trong sàn Upcom</string>
+    <string name="msgMaCKNotHave">không tồn tại</string>
+    <string name="msgGuideListQuote">Chức năng này cho phép bạn tự tạo nhiều bảng theo dõi riêng, đặt tên cho bảng, và thêm các mã vào tuỳ ý.\nBấm nút + trên thanh menu để tạo bảng mới.</string>
+    <string name="msgGuideAddStock">Bấm nút + trên thanh menu để thêm mã vào bảng.</string>
+    <string name="msgNotHaveData">không có dữ liệu!</string>
+    <string name="msgClearCache">Bấm OK sẽ xoá hết dữ liệu tạm, app sẽ tự khởi động lại</string>
+
+    <string name="msgCannotSendSMS">Máy này không thể gửi SMS</string>
+    <string name="msgSendSMSSuccess">Đã gửi tin nhắn</string>
+    <string name="msgSendSMSFail">Gửi tin nhắn thất bại</string>
+
+    <string name="msgCannotSendMail">Máy này không thể gửi Mail</string>
+    <string name="msgSendMailSuccess">Đã gửi email</string>
+    <string name="msgSendMailFail">Gửi email thất bại</string>
+    <string name="msgConfirmDeleteQuote">Bạn muốn xoá bảng</string>
+    <string name="msgConfirmDeleteStock">Bạn muốn xoá mã</string>
+    <string name="msgErrorServerOrNetwork">Lỗi server, kiểm tra lại kết nối mạng...</string>
+    <string name="msgConfirmExitApp">Bạn muốn thoát khỏi app?</string>
+
+    <string name="common_warning_risk_app">Phiên bản ứng dụng hiện tại không hợp lệ (ứng dụng đã bị chỉnh sửa hoặc giả mạo). Bạn vui lòng cài đặt bản mới nhất từ Google Play</string>
+    <string name="common_warning_emulator_running">Chúng tôi không hỗ trợ chạy ứng dụng này trên máy ảo Android.</string>
+
+</resources>

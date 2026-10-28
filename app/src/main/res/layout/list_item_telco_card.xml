@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vn.otofun.views.RippleLinearLayout
+    style="@style/LinearLayoutRippleStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/list_item_telco_card_logo_imageView"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:src="@drawable/viettel"/>
+
+        <TextView
+            android:id="@+id/list_item_telco_card_title_textView"
+            style="@style/Body1TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="Ma the Viettel"
+            android:textColor="@color/text_dark"/>
+
+        <TextView
+            style="@style/IconTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ion_ios_arrow_right"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/text_normal"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIVIDER_HEIGHT"
+        android:background="@color/line_normal"/>
+
+</com.vn.otofun.views.RippleLinearLayout>

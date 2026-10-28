@@ -1,0 +1,137 @@
+apply plugin: 'com.android.application'
+
+def final appName = "otofun++"
+project.ext {
+    defaultApplicationId = "com.vn.otofun"
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file("../otofun.jks")
+            storePassword "13112015"
+            keyAlias "13112015"
+            keyPassword "13112015"
+        }
+    }
+    compileSdkVersion 31
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId defaultApplicationId
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 7
+        versionName "1.0.2"
+
+        manifestPlaceholders = [manifestApplicationId: "com.vn.otofun",
+                                onesignal_app_id: "6a4f6103-564b-44b9-b007-b2bd36798493",
+                                onesignal_google_project_number: "430199382764"]
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "IS_TEST", "true"
+
+            def useDevServer = true
+            if (useDevServer) {
+//                applicationIdSuffix = ".debug"
+                manifestPlaceholders = [applicationIdWithSuffix: "${defaultApplicationId}.debug"]
+                buildConfigField "String", "DEFAULT_SECRET_KEY", "\"xxx\""
+                buildConfigField "String", "BASIC_AUTH_USERNAME", "\"xxx\""
+                buildConfigField "String", "BASIC_AUTH_PASSWORD", "\"xxx\""
+                buildConfigField "String", "MAIN_URL", "\"http://otofun.vn\""
+                buildConfigField "String", "AUTHORITY", "\"${defaultApplicationId}.debug.provider\""
+                resValue "string", "app_name", "$appName"
+                resValue "string", "authority", "${defaultApplicationId}.debug.provider"
+            } else {
+//                applicationIdSuffix = ".live"
+                manifestPlaceholders = [applicationIdWithSuffix: "${defaultApplicationId}.live"]
+                buildConfigField "String", "DEFAULT_SECRET_KEY", "\"xxx\""
+                buildConfigField "String", "BASIC_AUTH_USERNAME", "\"xxx\""
+                buildConfigField "String", "BASIC_AUTH_PASSWORD", "\"xxx\""
+                buildConfigField "String", "MAIN_URL", "\"http://otofun.vn\""
+                buildConfigField "String", "AUTHORITY", "\"${defaultApplicationId}.live.provider\""
+                resValue "string", "app_name", "$appName"
+                resValue "string", "authority", "${defaultApplicationId}.live.provider"
+            }
+        }
+        release {
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            manifestPlaceholders = [applicationIdWithSuffix: "${defaultApplicationId}"]
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "IS_TEST", "false"
+            buildConfigField "String", "DEFAULT_SECRET_KEY", "\"xxx\""
+            buildConfigField "String", "BASIC_AUTH_USERNAME", "\"xxx\""
+            buildConfigField "String", "BASIC_AUTH_PASSWORD", "\"xxx\""
+            buildConfigField "String", "MAIN_URL", "\"https://otofun.vn\""
+            buildConfigField "String", "AUTHORITY", "\"${defaultApplicationId}.provider\""
+            resValue "string", "app_name", appName
+            resValue "string", "authority", "${defaultApplicationId}.provider"
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+//                    def formattedDate = new Date().format('yyyyMMdd')
+//                    def newName = output.outputFile.name
+//                    newName = newName.replace("app-", "$appName-") //"MyAppName" -> I set my app variables in the root project
+//                    newName = newName.replace("-release", "-$versionName-" + formattedDate)
+//                    //noinspection GroovyAssignabilityCheck
+//                    output.outputFileName = new File(output.outputFile.parent, newName)
+                }
+            }
+        }
+    }
+    namespace 'com.vn.otofun'
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':libraries:viewpagerindicator')
+//    compile files('libs/jsoup-1.7.3.jar')
+    implementation project(':libraries:patterned-edittext')
+//    compile project(':libraries:CropImage')
+//    compile 'com.github.PhilJay:MPAndroidChart:v2.2.5'
+    implementation 'com.android.support:support-v4:23.3.0'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    implementation 'de.hdodenhof:circleimageview:1.3.0'
+    implementation 'com.loopj.android:android-async-http:1.4.5'
+    implementation 'com.jpardogo.materialtabstrip:library:1.1.0'
+//    compile 'com.squareup.picasso:picasso:2.3.2'
+//    compile 'com.nineoldandroids:library:2.4.0'
+//    compile 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.github.dmytrodanylyk.shadow-layout:library:1.0.1'
+    implementation 'it.sephiroth.android.library.horizontallistview:hlistview:1.2.2'
+    implementation 'uk.co.chrisjenx:calligraphy:2.1.0'
+    implementation 'com.android.support:appcompat-v7:23.3.0'
+    implementation 'com.github.rey5137:material:1.2.2'
+    implementation 'com.joooonho:selectableroundedimageview:1.0.1'
+    implementation 'com.android.support:recyclerview-v7:23.3.0'
+    implementation 'com.google.android.gms:play-services-ads:9.0.0'
+    implementation 'com.google.android.gms:play-services-analytics:9.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:9.0.0'
+
+    implementation 'com.android.support:cardview-v7:23.3.0'
+//    compile 'me.leolin:ShortcutBadger:1.1.3@aar'
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    implementation 'com.google.code.gson:gson:2.3.1'
+    implementation 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'com.onesignal:OneSignal:2.+@aar'
+
+    implementation 'com.google.firebase:firebase-core:9.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

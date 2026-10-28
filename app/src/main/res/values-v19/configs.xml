@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="NOTIFICATION_PADDING_TOP">32dp</dimen>
+
+    <dimen name="WELCOME_TOP_PADDING">-2dp</dimen>
+</resources>

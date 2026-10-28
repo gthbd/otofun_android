@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/dialog_background"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_default_title_textView"
+        style="@style/Body2TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dialog_default_content_textView"
+        style="@style/Body1TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BUTTON_HEIGHT"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIVIDER_HEIGHT"
+            android:background="#c9c9c9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/dialog_default_negative_button"
+                style="@style/FlatWaveButtonRippleStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="common_cancel_button"
+                android:textColor="@color/text_dark"/>
+
+            <View
+                android:layout_width="@dimen/DIVIDER_HEIGHT"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#c9c9c9"/>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/dialog_default_positive_button"
+                style="@style/FlatWaveButtonRippleStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="common_confirm_button"
+                android:textColor="@color/text_dark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/dialog_background"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_confirm_title_textView"
+        style="@style/Body2TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_confirm_icon"
+            style="@style/IconTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="@string/ion_alert"
+            android:textSize="32dp"/>
+
+        <TextView
+            android:id="@+id/dialog_confirm_content_textView"
+            style="@style/Body1TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BUTTON_HEIGHT"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIVIDER_HEIGHT"
+            android:background="#C9C9C9"/>
+
+        <com.rey.material.widget.Button
+            android:id="@+id/dialog_confirm_button"
+            style="@style/FlatWaveButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/buttonClose"
+            android:textColor="@color/text_dark"/>
+
+    </LinearLayout>
+
+</LinearLayout>

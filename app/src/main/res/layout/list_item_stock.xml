@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/background_bright_white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/list_item_stock_market_textView"
+            style="@style/Body1TextStyle"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:background="@color/background_dark_white"
+            android:text="..."/>
+
+        <TextView
+            android:id="@+id/list_item_stock_symbol_textView"
+            style="@style/Body2TextStyle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:maxLines="1"
+            android:background="@color/background_dark_white"
+            android:text="..."/>
+
+
+        <TextView
+            android:id="@+id/list_item_stock_name_textView"
+            style="@style/Body2TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:maxLines="1"
+            android:text="..."/>
+
+        <TextView
+            android:id="@+id/list_item_stock_person_textView"
+            style="@style/IconTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/ion_ios_people"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="0dp"
+            android:textSize="20dp"
+            android:textColor="@color/background_gray"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/list_item_stock_count_textView"
+            style="@style/Body2TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/list_item_stock_select_textView"
+            style="@style/IconTextStyle"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="@string/ion_android_checkbox_outline"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/background_main"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIVIDER_HEIGHT"
+        android:layout_marginTop="0dp"
+        android:background="@color/line_normal"/>
+
+</LinearLayout>

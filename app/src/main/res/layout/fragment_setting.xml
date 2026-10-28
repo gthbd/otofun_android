@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_main"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Body1TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@color/text_normal"
+                android:text="Các tuỳ chọn nhận tin nhắn khi có bài viết mới, hãy điều chỉnh để chỉ nhận những tin bạn cần"
+
+                />
+
+            <include
+                android:id="@+id/fragment_setting_enable_view"
+                layout="@layout/list_item_select" />
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/text_normal"
+                android:text="Các chủ đề"
+                />
+
+            <include
+                android:id="@+id/fragment_setting_muaxebanxe_view"
+                layout="@layout/list_item_select" />
+
+            <include
+                android:id="@+id/fragment_setting_dodientu_view"
+                layout="@layout/list_item_select" />
+
+            <TextView
+                style="@style/TitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp"
+                android:textColor="@color/text_normal"
+                android:text="Kiểu bài viết"
+                />
+
+            <include
+                android:id="@+id/fragment_setting_canban_view"
+                layout="@layout/list_item_select" />
+
+            <include
+                android:id="@+id/fragment_setting_canmua_view"
+                layout="@layout/list_item_select" />
+
+            <include
+                android:id="@+id/fragment_setting_chothue_view"
+                layout="@layout/list_item_select" />
+
+            <include
+                android:id="@+id/fragment_setting_canthue_view"
+                layout="@layout/list_item_select" />
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/fragment_setting_update_button"
+                style="@style/RaiseWaveColorButtonRippleStyle"
+                android:layout_width="140dp"
+                android:layout_height="@dimen/BUTTON_HEIGHT"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Cập nhật"
+                android:textColor="@color/text_bright"/>
+
+            <TextView
+                style="@style/Body1TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:textSize="14dp"
+                android:textColor="@color/text_normal"
+                android:text="Thông tin liên hệ nhà phát triển:"/>
+
+            <TextView
+                android:id="@+id/fragment_setting_phone_textview"
+                style="@style/Body1TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14dp"
+                android:textColor="@color/text_dark"
+                android:text="Phone:"/>
+
+            <TextView
+                android:id="@+id/fragment_setting_email_textview"
+                style="@style/Body1TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="14dp"
+                android:textColor="@color/text_dark"
+                android:text="Email:"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

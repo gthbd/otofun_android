@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_input_title_textView"
+        style="@style/Body2TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/text_dark"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/dialog_input_layout_edit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:id="@+id/dialog_input_title_edit_textView"-->
+            <!--style="@style/Body2TextStyle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:textColor="@color/text_dark" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/EDITTEXT_HEIGHT"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/edittext_background_stroke_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/EDITTEXT_BOTTOM_SPACING">
+
+            <EditText
+                android:id="@+id/dialog_input_editText"
+                style="@style/Body2TextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:imeOptions="actionDone|flagNoFullscreen"
+                android:inputType="textFilter"
+                android:background="@null"
+                android:paddingLeft="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/text_dark" />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/dialog_input_clear_button"
+                style="@style/IconButtonStyle"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/ion_ios_close_empty"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog_input_error_textView"
+            style="@style/Body2TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/text_red" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#c9c9c9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BUTTON_HEIGHT"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/dialog_input_cancel_button"
+            style="@style/FlatWaveButtonRippleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/text_dark" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#c9c9c9" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/dialog_input_ok_button"
+            style="@style/FlatWaveButtonRippleStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="OK"
+            android:textColor="@color/text_dark" />
+
+    </LinearLayout>
+
+</LinearLayout>

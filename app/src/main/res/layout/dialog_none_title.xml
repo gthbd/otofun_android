@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/dialog_background"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/none_title_dialog_icon"
+            style="@style/IconTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="@string/ion_android_checkmark_circle"
+            android:textColor="@color/dialog_success"
+            android:textSize="32dp"/>
+
+        <TextView
+            android:id="@+id/none_title_dialog_textView"
+            style="@style/Body1TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@color/text_dark"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIVIDER_HEIGHT"
+        android:background="#c9c9c9"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/BUTTON_HEIGHT">
+
+        <LinearLayout
+            android:id="@+id/none_title_dialog_one_button_pane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/none_title_dialog_ok_button"
+                style="@style/FlatWaveButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="OK"
+                android:textColor="@color/text_dark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/none_title_dialog_two_button_pane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/none_title_dialog_negative_button"
+                style="@style/FlatWaveButtonRippleStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                android:textAllCaps="true"
+                android:textColor="@color/text_dark"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:background="#c9c9c9"/>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/none_title_dialog_positive_button"
+                style="@style/FlatWaveButtonRippleStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="OK"
+                android:textAllCaps="true"
+                android:textColor="@color/text_dark"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

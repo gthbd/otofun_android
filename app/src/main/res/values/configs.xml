@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="DIVIDER_HEIGHT">0.5dp</dimen>
+
+    <dimen name="WELCOME_TOP_PADDING">-24dp</dimen>
+
+    <dimen name="REGISTER_SCENCE1_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="REGISTER_SCENCE1_MARGIN_TOP">2dp</dimen>
+
+    <dimen name="REGISTER_SCENCE2_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="REGISTER_SCENCE2_MARGIN_TOP">10dp</dimen>
+
+    <dimen name="LOGIN_SCENCE1_MARGIN_LEFT_RIGHT">32dp</dimen>
+    <dimen name="LOGIN_SCENCE1_MARGIN_TOP">32dp</dimen>
+
+    <dimen name="LOGIN_SCENCE2_MARGIN_LEFT_RIGHT">32dp</dimen>
+    <dimen name="LOGIN_SCENCE2_MARGIN_TOP">32dp</dimen>
+
+    <dimen name="LOGIN_SCENCE3_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="LOGIN_SCENCE3_MARGIN_TOP">10dp</dimen>
+
+    <dimen name="FORGETPASS_SCENCE1_LEFT_RIGHT">16dp</dimen>
+    <dimen name="FORGETPASS_SCENCE1_TOP">8dp</dimen>
+
+    <dimen name="FORGETPASS_SCENCE2_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="FORGETPASS_SCENCE2_MARGIN_TOP">2dp</dimen>
+
+    <dimen name="USERINFO_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="USERINFO_MARGIN_TOP">10dp</dimen>
+
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_LEFT_RIGHT_0">16dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_LEFT_RIGHT_1">16dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_LEFT_RIGHT_2">0dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_TOP_1">10dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_TOP_2">8dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_EDITTEXT_HEIGHT">40dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_BOTTOM">2dp</dimen>
+
+    <dimen name="SERVICES_MARGIN_LEFT_RIGHT">0dp</dimen>
+    <dimen name="SERVICES_MARGIN_TOP">0dp</dimen>
+
+    <dimen name="ACCOUNT_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="ACCOUNT_MARGIN_TOP">4dp</dimen>
+
+    <dimen name="MAIN_BUDGET_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="CREDIT_CARD_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="SETTING_MARGIN_LEFT_RIGHT">20dp</dimen>
+    <dimen name="SETTING_MARGIN_TOP_BOTTOM">10dp</dimen>
+
+    <dimen name="CREDIT_CARD_ASSIGN_MARGIN_LEFT_RIGHT_1">16dp</dimen>
+    <dimen name="CREDIT_CARD_ASSIGN_MARGIN_LEFT_RIGHT_2">0dp</dimen>
+    <dimen name="CREDIT_CARD_ASSIGN_MARGIN_TOP">8dp</dimen>
+
+    <dimen name="EXCHANGE_MONEY_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="EXCHANGE_MONEY_MARGIN_TOP">4dp</dimen>
+    <dimen name="EXCHANGE_MONEY_MARGIN_BOTTOM">4dp</dimen>
+
+    <dimen name="SEND_REQUEST_MARGIN_LEFT_TOP">120dp</dimen>
+    <dimen name="SEND_REQUEST_MARGIN_TOP_CENTER">30dp</dimen>
+    <dimen name="SEND_REQUEST_MARGIN_BOTTOM_CENTER">30dp</dimen>
+    <dimen name="SEND_REQUEST_WIDTH_CENTER">100dp</dimen>
+    <dimen name="SEND_REQUEST_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="REQUEST_RECEIVED_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="REQUEST_RECEIVED_MARGIN_TOP_BOTTOM">16dp</dimen>
+    <dimen name="REQUEST_RECEIVED_WIDTH_HEIGHT_AVATAR">41dp</dimen>
+    <dimen name="REQUEST_RECEIVED_WIDTH_BUTTON">104dp</dimen>
+    <dimen name="REQUEST_RECEIVED_HEIGHT_BUTTON">32dp</dimen>
+
+    <dimen name="PAY_SUCCESS_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="PAY_SUCCESS_PADDING_LEFT_RIGHT">16dp</dimen>
+    <dimen name="PAY_SUCCESS_PADDING_TOP_BOTTOM">16dp</dimen>
+    <dimen name="PAY_SUCCESS_PADDING_LEFT_RIGHT_2">32dp</dimen>
+
+    <dimen name="PAY_FAIL_PADDING_TOP_BOTTOM">20dp</dimen>
+    <dimen name="PAY_FAIL_MARGIN_LEFT">24dp</dimen>
+
+    <dimen name="RECHARGE_ASSIGNED_CARD_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="RECHARGE_TITLE_HEIGHT">48dp</dimen>
+
+    <dimen name="BUY_SCRATCH_CARD_MARGIN_LEFT_RIGHT1">16dp</dimen>
+    <dimen name="BUY_SCRATCH_CARD_MARGIN_LEFT_RIGHT2">16dp</dimen>
+    <dimen name="BUY_SCRATCH_CARD_CHECKBOX_MARGIN_LEFT_RIGHT">12dp</dimen>
+
+    <dimen name="WITHDRAW_MONEY_OPERATORS_MARGIN_BOTTOM">2dp</dimen>
+    <dimen name="WITHDRAW_MONEY_CONTENT_MARGIN_RIGHT">8dp</dimen>
+    <dimen name="WITHDRAW_MONEY_CONTENT_MARGIN_TOP_BOTTOM">6dp</dimen>
+
+    <dimen name="RECHARGE_MONEY_BY_MOBILE_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="RECHARGE_MONEY_BY_ASSIGNED_CARD_LEFT_RIGHT">16dp</dimen>
+    <dimen name="RECHARGE_MONEY_BY_BANK_ACCOUNT_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="PAYMENT_MOBILE_BILL_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="PAYMENT_MOBILE_BILL_CHECKBOX_MARGIN_LEFT_RIGHT">12dp</dimen>
+    <dimen name="PAYMENT_MOBILE_BILL_CHOOSER_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="CREDIT_CARD_INPUT_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="CREDIT_CARD_AUTH_3D_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="MOBILE_BILL_TEMPLATE_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="PAYMENT_SOURCE_CHOOSER_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="FEE_TABLE_MARGIN_LEFT_RIGHT">4dp</dimen>
+
+    <dimen name="PAYMENT_SERVICE_BILL_MARGIN_LEFT_RIGHT1">16dp</dimen>
+    <dimen name="PAYMENT_SERVICE_BILL_MARGIN_LEFT_RIGHT2">16dp</dimen>
+
+    <dimen name="INSTALLMENT_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="VIMO_AGENTS_BUY_DIRECTLY_PADDING">16dp</dimen>
+
+    <dimen name="DETAIL_TRANSACTION_MARGIN_LEFT_RIGHT">10dp</dimen>
+    <dimen name="DETAIL_PADDING_TOP_BOTTOM">4dp</dimen>
+
+    <dimen name="WELCOME_TEXT_WIDTH">300dp</dimen>
+    <dimen name="WELCOME_IMAGE_WIDTH">250dp</dimen>
+    <dimen name="WELCOME_BOTTOM_MARGIN">32dp</dimen>
+
+    <dimen name="SLASH_MOBIFONE_LOGO">20dp</dimen>
+    <dimen name="SLASH_VIMO_LOGO">84dp</dimen>
+    <dimen name="SLASH_MARGIN_TOP">120dp</dimen>
+
+    <dimen name="SHADOW_PADDING_X">0dp</dimen>
+    <dimen name="SHADOW_PADDING_Y">2dp</dimen>
+    <dimen name="SHADOW_RADIUS">2dp</dimen>
+
+    <dimen name="DIALOG_WIDTH">320dp</dimen>
+    <dimen name="DIALOG_HEIGHT">160dp</dimen>
+
+    <dimen name="DIALOG_WIDTH_MAP">260dp</dimen>
+    <dimen name="DIALOG_HEIGHT_MAP">130dp</dimen>
+
+    <dimen name="SMALL_DIALOG_HEIGHT_CARD">100dp</dimen>
+
+    <dimen name="SMALL_DIALOG_WIDTH">280dp</dimen>
+    <dimen name="SMALL_DIALOG_HEIGHT">140dp</dimen>
+
+    <dimen name="MEDIUM_DIALOG_WIDTH">300dp</dimen>
+    <dimen name="MEDIUM_DIALOG_HEIGHT">200dp</dimen>
+
+    <dimen name="LARGE_DIALOG_WIDTH">320dp</dimen>
+    <dimen name="LARGE_DIALOG_HEIGHT">300dp</dimen>
+
+    <dimen name="TAB_HEIGHT">52dp</dimen>
+
+    <dimen name="DRAWER_WIDTH">250dp</dimen>
+
+    <dimen name="BACKGROUND_BANK">75dp</dimen>
+
+    <dimen name="LOADING_WIDTH">48dp</dimen>
+    <dimen name="LOADING_HEIGHT">48dp</dimen>
+
+    <dimen name="EDITTEXT_HEIGHT">40dp</dimen>
+
+    <dimen name="TEXT_SMALL">11sp</dimen>
+    <dimen name="TEXT_MEDIUM">16sp</dimen>
+
+    <dimen name="BUTTON_HEIGHT">48dp</dimen>
+    <dimen name="BUTTON_SMALL_HEIGHT">32dp</dimen>
+    <dimen name="BUTTON_MEDIUM_HEIGHT">40dp</dimen>
+
+    <dimen name="IMAGE_NEWS_WIDTH">170dp</dimen>
+    <dimen name="IMAGE_NEWS_HEIGHT">100dp</dimen>
+
+    <dimen name="SCALE_OFF_SPACING">8dp</dimen>
+
+    <dimen name="DIALOG_CHOICE_LIST_PADDING_BOTTOM">16dp</dimen>
+
+    <dimen name="SPINNER_ARROW_SIZE">17sp</dimen>
+
+    <dimen name="NOTIFICATION_PADDING_TOP">8dp</dimen>
+
+    <dimen name="EDITTEXT_BOTTOM_SPACING">8dp</dimen>
+
+    <dimen name="dropdown_item_padding">10dp</dimen>
+    <dimen name="dropdown_item_height">48dp</dimen>
+
+    <dimen name="SEARCH_AGENT_HEADER_HEIGHT">150dp</dimen>
+    <dimen name="SEARCH_VIEW_WIDTH">300dp</dimen>
+
+    <style name="TitleTextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="SegmentTextStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="CaptionTextStyle" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="CaptionTextStyle.Bold" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="CaptionTextStyle.Italic" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontPath">fonts/Roboto-LightItalic.ttf</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="ButtonTextStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="Body1TextStyle" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="Body1TextStyle.Italic" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontPath">fonts/Roboto-LightItalic.ttf</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="Body2TextStyle" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+
+    <style name="Item0TextStyle" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="Item1TextStyle" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ItemLeftTextStyle" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+
+    </style>
+
+    <style name="ItemRightTextStyle" parent="TextAppearance.AppCompat.Body2">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LayoutLeftRightTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="SubheadTextStyle" parent="TextAppearance.AppCompat.Subhead" />
+
+    <style name="HeadlineTextStyle" parent="TextAppearance.AppCompat.Headline" />
+
+    <style name="NumberTextStyle" parent="TextAppearance.AppCompat.Large">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="IconTextStyle">
+        <item name="fontPath">fonts/ionicons.ttf</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <style name="IconButtonStyle" parent="Material.Drawable.Ripple.Wave.Light">
+        <item name="android:background">@null</item>
+        <item name="rd_cornerRadius">4dp</item>
+        <item name="rd_rippleColor">#33000000</item>
+        <item name="fontPath">fonts/ionicons.ttf</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">@color/text_bright</item>
+
+    </style>
+
+
+</resources>

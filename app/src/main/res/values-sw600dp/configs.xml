@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="REGISTER_SCENCE1_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="REGISTER_SCENCE1_MARGIN_TOP">4dp</dimen>
+
+    <dimen name="REGISTER_SCENCE2_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="REGISTER_SCENCE2_MARGIN_TOP">16dp</dimen>
+
+    <dimen name="LOGIN_SCENCE1_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="LOGIN_SCENCE1_MARGIN_TOP">48dp</dimen>
+
+    <dimen name="LOGIN_SCENCE2_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="LOGIN_SCENCE2_MARGIN_TOP">48dp</dimen>
+
+    <dimen name="LOGIN_SCENCE3_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="LOGIN_SCENCE3_MARGIN_TOP">16dp</dimen>
+
+    <dimen name="FORGETPASS_SCENCE1_LEFT_RIGHT">96dp</dimen>
+    <dimen name="FORGETPASS_SCENCE1_TOP">16dp</dimen>
+
+    <dimen name="FORGETPASS_SCENCE2_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="FORGETPASS_SCENCE2_MARGIN_TOP">16dp</dimen>
+
+    <dimen name="USERINFO_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="USERINFO_MARGIN_TOP">16dp</dimen>
+
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_LEFT_RIGHT_0">16dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_LEFT_RIGHT_1">96dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_LEFT_RIGHT_2">96dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_TOP_1">10dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_EDITTEXT_HEIGHT">40dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_BOTTOM">8dp</dimen>
+    <dimen name="LIST_MONEY_OPERATORS_MARGIN_TOP_2">20dp</dimen>
+
+    <dimen name="SERVICES_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="SERVICES_MARGIN_TOP">16dp</dimen>
+
+    <dimen name="ACCOUNT_MARGIN_LEFT_RIGHT">16dp</dimen>
+    <dimen name="ACCOUNT_MARGIN_TOP">20dp</dimen>
+
+    <dimen name="EXCHANGE_MONEY_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="EXCHANGE_MONEY_MARGIN_TOP">10dp</dimen>
+    <dimen name="EXCHANGE_MONEY_MARGIN_BOTTOM">10dp</dimen>
+
+    <dimen name="SEND_REQUEST_MARGIN_LEFT_TOP">210dp</dimen>
+    <dimen name="SEND_REQUEST_MARGIN_TOP_CENTER">30dp</dimen>
+    <dimen name="SEND_REQUEST_MARGIN_BOTTOM_CENTER">30dp</dimen>
+    <dimen name="SEND_REQUEST_WIDTH_CENTER">100dp</dimen>
+    <dimen name="SEND_REQUEST_MARGIN_LEFT_RIGHT">96dp</dimen>
+
+    <dimen name="MAIN_BUDGET_MARGIN_LEFT_RIGHT">96dp</dimen>
+
+    <dimen name="CREDIT_CARD_ASSIGN_MARGIN_LEFT_RIGHT_1">96dp</dimen>
+    <dimen name="CREDIT_CARD_ASSIGN_MARGIN_LEFT_RIGHT_2">0dp</dimen>
+    <dimen name="CREDIT_CARD_ASSIGN_MARGIN_TOP">32dp</dimen>
+
+    <dimen name="REQUEST_RECEIVED_MARGIN_LEFT_RIGHT">120dp</dimen>
+    <dimen name="REQUEST_RECEIVED_MARGIN_TOP_BOTTOM">16dp</dimen>
+    <dimen name="REQUEST_RECEIVED_WIDTH_HEIGHT_AVATAR">41dp</dimen>
+    <dimen name="REQUEST_RECEIVED_WIDTH_BUTTON">104dp</dimen>
+    <dimen name="REQUEST_RECEIVED_HEIGHT_BUTTON">32dp</dimen>
+
+    <dimen name="PAY_SUCCESS_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="PAY_SUCCESS_PADDING_LEFT_RIGHT">96dp</dimen>
+    <dimen name="PAY_SUCCESS_PADDING_TOP_BOTTOM">32dp</dimen>
+    <dimen name="PAY_SUCCESS_PADDING_LEFT_RIGHT_2">96dp</dimen>
+
+    <dimen name="PAY_FAIL_PADDING_TOP_BOTTOM">20dp</dimen>
+    <dimen name="PAY_FAIL_MARGIN_LEFT">96dp</dimen>
+
+    <dimen name="BUY_SCRATCH_CARD_MARGIN_LEFT_RIGHT1">96dp</dimen>
+    <dimen name="BUY_SCRATCH_CARD_MARGIN_LEFT_RIGHT2">16dp</dimen>
+    <dimen name="BUY_SCRATCH_CARD_CHECKBOX_MARGIN_LEFT_RIGHT">92dp</dimen>
+
+    <dimen name="RECHARGE_MONEY_BY_MOBILE_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="RECHARGE_ASSIGNED_CARD_MARGIN_LEFT_RIGHT">32dp</dimen>
+    <dimen name="RECHARGE_MONEY_BY_ASSIGNED_CARD_LEFT_RIGHT">96dp</dimen>
+    <dimen name="RECHARGE_MONEY_BY_BANK_ACCOUNT_LEFT_RIGHT">96dp</dimen>
+
+    <dimen name="CREDIT_CARD_INPUT_MARGIN_LEFT_RIGHT">96dp</dimen>
+
+    <dimen name="PAYMENT_MOBILE_BILL_MARGIN_LEFT_RIGHT">96dp</dimen>
+    <dimen name="PAYMENT_MOBILE_BILL_CHECKBOX_MARGIN_LEFT_RIGHT">92dp</dimen>
+    <dimen name="PAYMENT_MOBILE_BILL_CHOOSER_MARGIN_LEFT_RIGHT">32dp</dimen>
+
+    <dimen name="MOBILE_BILL_TEMPLATE_MARGIN_LEFT_RIGHT">96dp</dimen>
+
+    <dimen name="PAYMENT_SOURCE_CHOOSER_MARGIN_LEFT_RIGHT">32dp</dimen>
+
+    <dimen name="FEE_TABLE_MARGIN_LEFT_RIGHT">16dp</dimen>
+
+    <dimen name="PAYMENT_SERVICE_BILL_MARGIN_LEFT_RIGHT1">96dp</dimen>
+    <dimen name="PAYMENT_SERVICE_BILL_MARGIN_LEFT_RIGHT2">16dp</dimen>
+
+    <dimen name="INSTALLMENT_MARGIN_LEFT_RIGHT">96dp</dimen>
+
+    <dimen name="VIMO_AGENTS_BUY_DIRECTLY_PADDING">32dp</dimen>
+
+    <dimen name="DRAWER_WIDTH">360dp</dimen>
+
+    <dimen name="WELCOME_TEXT_WIDTH">350dp</dimen>
+    <dimen name="WELCOME_IMAGE_WIDTH">300dp</dimen>
+    <dimen name="WELCOME_BOTTOM_MARGIN">48dp</dimen>
+
+    <dimen name="LOADING_WIDTH">48dp</dimen>
+    <dimen name="LOADING_HEIGHT">48dp</dimen>
+
+    <dimen name="DIALOG_WIDTH">320dp</dimen>
+    <dimen name="DIALOG_HEIGHT">170dp</dimen>
+
+    <dimen name="SMALL_DIALOG_WIDTH">320dp</dimen>
+    <dimen name="SMALL_DIALOG_HEIGHT">150dp</dimen>
+
+    <dimen name="EDITTEXT_HEIGHT">40dp</dimen>
+
+    <dimen name="SLASH_MOBIFONE_LOGO">32dp</dimen>
+    <dimen name="SLASH_VIMO_LOGO">120dp</dimen>
+    <dimen name="SLASH_MARGIN_TOP">200dp</dimen>
+
+    <dimen name="TAB_HEIGHT">52dp</dimen>
+
+    <dimen name="SEARCH_AGENT_HEADER_HEIGHT">180dp</dimen>
+    <dimen name="SEARCH_VIEW_WIDTH">350dp</dimen>
+</resources>
