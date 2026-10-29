@@ -71,7 +71,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
     NoticeDialogFragment mServerErrorDialog;
     private FirebaseAnalytics mFirebaseAnalytics;
 
-    private InterstitialAd mInterstitialAd = null;
+    //private InterstitialAd mInterstitialAd = null;
     private Handler mMainUIHandler = new Handler();
 
     protected Toolbar mToolBar;

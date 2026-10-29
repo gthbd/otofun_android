@@ -142,13 +142,13 @@ public class WebFragment extends BaseFragment {
         mWebView.getSettings().setJavaScriptEnabled(true);
 //        mWebView.getSettings().setBuiltInZoomControls(true);
 
-        mAdView = (AdView) view.findViewById(R.id.fragment_web_adview);
+        //mAdView = (AdView) view.findViewById(R.id.fragment_web_adview);
 //        mAdView.setAdSize(AdSize.BANNER);
 //        mAdView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");//test
 //        mAdView.setAdUnitId("ca-app-pub-4411026643591265/5172454061");
 
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
         return view;
     }
