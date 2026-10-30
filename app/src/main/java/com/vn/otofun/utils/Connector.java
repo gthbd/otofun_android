@@ -1,39 +1,39 @@
 package com.vn.otofun.utils;
 
 import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
 
 import com.google.gson.Gson;
 
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-
-import java.util.HashMap;
-
-import org.apache.http.entity.StringEntity;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 
 /**
  * Created by AnhVT on 6/4/15.
  */
 public class Connector {
-//    final static String TAG = "Connector";
-//    final static ArrayList<String> normalFunctions = new ArrayList<>();
-    static AsyncHttpClient client = new AsyncHttpClient();
-//    static String basicAuthUsername = null, basicAuthPassword = null;
+    private static final OkHttpClient client = new OkHttpClient.Builder()
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .writeTimeout(30, TimeUnit.SECONDS)
+            .build();
 
-//    public static void auth(String basicUser, String basicPassword) {
-//        client.setBasicAuth(basicUser, basicPassword);
-//    }
+    private static final Handler mainHandler = new Handler(Looper.getMainLooper());
 
-//    public static void get(Context context, String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
-//        VLog.d("GET: " + url);
-//        VLog.d("Request: " + params);
-////        setupHeaders();
-//        client.get(context, url, params, responseHandler);
-//    }
-
-    public static void post(Context context, HashMap params, AsyncHttpResponseHandler responseHandler) {
+    public static void post(Context context, HashMap params, final SecretHttpResponseHandler responseHandler) {
         VLog.d("POST Func: " + params.get(Configs.k_api_func));
 
         HashMap defaultParams = Commons.getDefaultAPIParams(context);
@@ -52,68 +52,71 @@ public class Connector {
             VLog.d("Exception 1");
         }
 
-        if (bodyString == null) {
-            VLog.d("Error bodyString null");
+        if (bodyString == null || bodyString.length() <= 0) {
+            VLog.d("Error bodyString empty/null");
+            if (responseHandler != null) {
+                mainHandler.post(() -> responseHandler.handleFailure(0, null, "Invalid request body"));
+            }
             return;
         }
-
-        if (bodyString.length() <= 0) {
-            VLog.d("Error bodyString empty");
-            return;
-        }
-
 
         VLog.d("Request:" + bodyString);
-        StringEntity bodyEntity = null;
+        String bodyEncryptString;
         try {
-//            String bodyEncryptString = Commons.encrypt(bodyString, );
-            String bodyEncryptString = AES.encryptWithDefPwd(bodyString);
-//            VLog.d("bodyEncryptString:" + bodyEncryptString);
+            bodyEncryptString = AES.encryptWithDefPwd(bodyString);
 
             if (bodyEncryptString == null) {
                 VLog.d("Error bodyEncryptString null");
+                if (responseHandler != null) {
+                    mainHandler.post(() -> responseHandler.handleFailure(0, null, "Encryption error"));
+                }
                 return;
             }
-
-            bodyEntity = new StringEntity(bodyEncryptString);
         } catch (Exception je) {
             VLog.d("Exception 2");
-        }
-        if (bodyEntity == null) {
-            VLog.d("Error bodyEntity empty");
+            if (responseHandler != null) {
+                mainHandler.post(() -> responseHandler.handleFailure(0, null, "Encryption exception"));
+            }
             return;
         }
 
-        client.post(context, Commons.API_ROOT_NEW, bodyEntity, "application/json", responseHandler);
-    }
+        MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=utf-8");
+        RequestBody body = RequestBody.create(bodyEncryptString, MEDIA_TYPE_JSON);
 
-    public static AsyncHttpClient client() {
-        return client;
+        Request request = new Request.Builder()
+                .url(Commons.API_ROOT_NEW)
+                .post(body)
+                .build();
+
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                VLog.d("OkHttp onFailure: " + e.getMessage());
+                if (responseHandler != null) {
+                    mainHandler.post(() -> responseHandler.handleFailure(-1, null, e.getMessage()));
+                }
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                final int code = response.code();
+                final String responseBody = response.body() != null ? response.body().string() : "";
+                if (response.isSuccessful()) {
+                    if (responseHandler != null) {
+                        mainHandler.post(() -> responseHandler.handleSuccess(code, responseBody));
+                    }
+                } else {
+                    if (responseHandler != null) {
+                        mainHandler.post(() -> responseHandler.handleFailure(code, null, "HTTP Error " + code));
+                    }
+                }
+            }
+        });
     }
 
     public static void cancelAllRequests() {
-        client.cancelAllRequests(true);
     }
 
     public static void cancelRequest(Context context) {
-        client.cancelRequests(context, true);
     }
-
-//    private static void setupHeaders() {
-//        client.addHeader("x-api-version","1.0.0");
-//        client.addHeader("Content-Type","application/x-www-form-urlencoded");
-//    }
-
-//    private static void setupBasicAuth() {
-//        if (basicAuthUsername == null && basicAuthPassword == null) {
-//            try {
-//                basicAuthUsername = Commons.encrypt(BuildConfig.BASIC_AUTH_USERNAME, BuildConfig.BASIC_AUTH_PASSWORD);
-//                basicAuthPassword = Commons.encrypt(BuildConfig.BASIC_AUTH_PASSWORD, BuildConfig.BASIC_AUTH_PASSWORD);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//            client.setBasicAuth(basicAuthUsername, basicAuthPassword);
-//            client.setTimeout(60000);
-//        }
-//    }
 }

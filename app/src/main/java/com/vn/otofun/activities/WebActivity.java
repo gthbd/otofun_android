@@ -1,7 +1,7 @@
 package com.vn.otofun.activities;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.vn.otofun.BaseActivity;
 import com.vn.otofun.R;

@@ -44,7 +44,7 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/dialog_default_negative_button"
                 style="@style/FlatWaveButtonRippleStyle"
                 android:layout_width="0dp"
@@ -60,7 +60,7 @@
                 android:layout_marginTop="4dp"
                 android:background="#c9c9c9"/>
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/dialog_default_positive_button"
                 style="@style/FlatWaveButtonRippleStyle"
                 android:layout_width="0dp"

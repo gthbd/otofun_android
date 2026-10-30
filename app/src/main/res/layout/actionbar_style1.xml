@@ -8,7 +8,7 @@
 
 
 
-    <com.rey.material.widget.Button
+    <Button
         android:id="@+id/actionbar_style1_back_button"
         style="@style/IconButtonStyle"
         android:layout_width="38dp"
@@ -50,7 +50,7 @@
             android:visibility="gone">
 
 
-            <!--<com.rey.material.widget.Button-->
+            <!--<Button-->
                 <!--android:id="@+id/actionbar_right_tool_threads_filter_button"-->
                 <!--style="@style/RaiseWaveColorButtonRippleStyle"-->
                 <!--android:layout_width="140dp"-->
@@ -85,7 +85,7 @@
                 app:cpv_color="@color/background_bright_white"
                 />
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/actionbar_right_tool_webview_star_button"
                 style="@style/IconButtonStyle"
                 android:layout_width="50dp"
@@ -95,7 +95,7 @@
                 android:textSize="26dp"
                 />
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/actionbar_right_tool_webview_home_button"
                 style="@style/IconButtonStyle"
                 android:layout_width="50dp"
@@ -105,7 +105,7 @@
                 android:textSize="26dp"
                 />
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/actionbar_right_tool_webview_reload_button"
                 style="@style/IconButtonStyle"
                 android:layout_width="50dp"
@@ -116,7 +116,7 @@
                 />
 
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/actionbar_right_tool_webview_back_button"
                 style="@style/IconButtonStyle"
                 android:layout_width="50dp"
@@ -126,7 +126,7 @@
                 android:textSize="30dp"
                 />
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/actionbar_right_tool_webview_forward_button"
                 style="@style/IconButtonStyle"
                 android:layout_width="50dp"

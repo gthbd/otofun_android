@@ -1,13 +1,19 @@
 package com.vn.otofun.fragments;
 
+import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebResourceError;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.WebResourceRequest;
+import android.net.http.SslError;
+import android.webkit.SslErrorHandler;
 import android.widget.Button;
 import android.graphics.Bitmap;
 import android.widget.TextView;
@@ -20,9 +26,11 @@ import com.vn.otofun.data.Prefs;
 import com.vn.otofun.utils.Configs;
 import com.vn.otofun.utils.VLog;
 import com.vn.otofun.utils.Commons;
+/*
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.AdSize;
+ */
 import java.util.Locale;
 
 /**
@@ -40,7 +48,7 @@ public class WebFragment extends BaseFragment {
     int mStar = 0;
     int mThreadID = 0;
     String mOriginURL = "";
-    private AdView mAdView;
+    // private AdView mAdView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -122,6 +130,17 @@ public class WebFragment extends BaseFragment {
         View view = inflater.inflate(R.layout.fragment_web, container, false);
         mWebView = (WebView) view.findViewById(R.id.fragment_web_view);
 
+        WebSettings settings = mWebView.getSettings();
+        settings.setJavaScriptEnabled(true);
+        settings.setDomStorageEnabled(true);
+        settings.setLoadsImagesAutomatically(true);
+        settings.setLoadWithOverviewMode(true);
+        settings.setUseWideViewPort(true);
+        settings.setSupportZoom(true);
+        settings.setBuiltInZoomControls(true);
+        settings.setDisplayZoomControls(false);
+        settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
@@ -138,9 +157,24 @@ public class WebFragment extends BaseFragment {
                     p.setLastURL(url);
                 }
             }
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                view.loadUrl(request.getUrl().toString());
+                return true;
+            }
+
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+                VLog.d("WebView error: " + (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ? error.getDescription() : ""));
+            }
+
+            @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+                handler.proceed();
+            }
         });
-        mWebView.getSettings().setJavaScriptEnabled(true);
-//        mWebView.getSettings().setBuiltInZoomControls(true);
 
         //mAdView = (AdView) view.findViewById(R.id.fragment_web_adview);
 //        mAdView.setAdSize(AdSize.BANNER);

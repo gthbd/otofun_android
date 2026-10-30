@@ -29,7 +29,45 @@
         android:configChanges="orientation|keyboardHidden|screenSize"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:exported="false"
+            tools:node="merge" />
+
+        <receiver
+            android:name="com.onesignal.GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.vn.otofun" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.onesignal.BootUpReceiver"
+            android:exported="true"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.onesignal.UpgradeReceiver"
+            android:exported="true"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
         <meta-data
             android:name="dbv"
             android:value="1" />
@@ -40,11 +78,13 @@
 
         <activity
             android:name="com.vn.otofun.activities.SettingActivity"
+            android:exported="false"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
             android:name="com.vn.otofun.activities.SplashActivity"
+            android:exported="true"
             android:noHistory="false"
             android:screenOrientation="sensorPortrait">
             <intent-filter>
@@ -55,16 +95,19 @@
 
         <activity
             android:name="com.vn.otofun.activities.WebActivity"
+            android:exported="false"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
             android:name="com.vn.otofun.activities.ThreadsActivity"
+            android:exported="false"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan" />
 
         <activity
             android:name="com.vn.otofun.activities.HomeActivity"
+            android:exported="false"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan" />
 

@@ -13,6 +13,7 @@
         android:layout_weight="1"
         />
 
+    <!--
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/fragment_web_adview"
@@ -23,5 +24,6 @@
         ads:adUnitId="ca-app-pub-4411026643591265/5172454061"
         >
     </com.google.android.gms.ads.AdView>
+    -->
 
 </LinearLayout>

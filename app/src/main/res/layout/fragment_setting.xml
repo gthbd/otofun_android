@@ -76,7 +76,7 @@
                 layout="@layout/list_item_select" />
 
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/fragment_setting_update_button"
                 style="@style/RaiseWaveColorButtonRippleStyle"
                 android:layout_width="140dp"

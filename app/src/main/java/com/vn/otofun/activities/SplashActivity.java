@@ -2,8 +2,8 @@ package com.vn.otofun.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.TaskStackBuilder;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.app.TaskStackBuilder;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Window;
 
 import com.vn.otofun.data.Prefs;

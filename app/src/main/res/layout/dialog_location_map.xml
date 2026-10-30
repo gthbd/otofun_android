@@ -40,7 +40,7 @@
             android:orientation="horizontal"
             android:weightSum="10">
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/dialog_location_map_cancel"
                 style="@style/FlatWaveButtonRippleStyle"
                 android:layout_width="0dp"
@@ -57,7 +57,7 @@
                 android:layout_marginTop="4dp"
                 android:background="#c9c9c9" />
 
-            <com.rey.material.widget.Button
+            <Button
                 android:id="@+id/dialog_location_map_ok"
                 style="@style/FlatWaveButtonRippleStyle"
                 android:layout_width="0dp"

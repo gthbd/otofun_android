@@ -55,7 +55,7 @@
             android:layout_height="@dimen/DIVIDER_HEIGHT"
             android:background="#C9C9C9"/>
 
-        <com.rey.material.widget.Button
+        <Button
             android:id="@+id/dialog_confirm_button"
             style="@style/FlatWaveButtonRippleStyle"
             android:layout_width="match_parent"

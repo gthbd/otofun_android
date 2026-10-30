@@ -45,7 +45,7 @@
 
         </LinearLayout>
 
-        <com.rey.material.widget.Button
+        <Button
             android:id="@+id/list_item_quote_edit_button"
             style="@style/IconButtonStyle"
             android:layout_width="48dp"
@@ -55,7 +55,7 @@
             android:textColor="@color/background_main"
             />
 
-        <com.rey.material.widget.Button
+        <Button
             android:id="@+id/list_item_quote_delete_button"
             style="@style/IconButtonStyle"
             android:layout_width="48dp"

@@ -9,7 +9,7 @@ import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -24,10 +24,12 @@ import com.rey.material.drawable.BlankDrawable;
 import com.rey.material.util.ThemeUtil;
 import com.rey.material.util.TypefaceUtil;
 import com.rey.material.widget.CircleCheckedTextView;
-import com.rey.material.widget.ListView;
+import android.widget.AbsListView;
+import android.widget.ListView;
 
 import java.util.Calendar;
 
+import com.rey.material.widget.Switch;
 import com.vn.otofun.R;
 
 public class YearPicker extends ListView {
@@ -264,7 +266,7 @@ public class YearPicker extends ListView {
     /**
      * Set a listener will be called when the selected year value is changed.
      *
-     * @param listener The {@link YearPicker.OnYearChangedListener} will be called.
+     * @param listener The {@link OnYearChangedListener} will be called.
      */
     public void setOnYearChangedListener(OnYearChangedListener listener) {
         mOnYearChangedListener = listener;
@@ -432,7 +434,7 @@ public class YearPicker extends ListView {
         int year;
 
         /**
-         * Constructor called from {@link com.rey.material.widget.Switch#onSaveInstanceState()}
+         * Constructor called from {@link Switch#onSaveInstanceState()}
          */
         SavedState(Parcelable superState) {
             super(superState);

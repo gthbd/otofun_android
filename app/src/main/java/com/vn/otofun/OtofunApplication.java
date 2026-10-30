@@ -1,20 +1,16 @@
 package com.vn.otofun;
 
 import android.app.Application;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-import android.support.v4.app.Fragment;
 import android.os.Handler;
 
-import com.google.gson.internal.LinkedTreeMap;
-import com.vn.otofun.data.Prefs;
-import com.vn.otofun.utils.Commons;
+import androidx.fragment.app.Fragment;
+
+import com.onesignal.OneSignal;
+import com.vn.otofun.utils.Configs;
 import com.vn.otofun.utils.Connector;
 import com.vn.otofun.utils.SecretHttpResponseHandler;
-import com.vn.otofun.utils.Utils;
 import com.vn.otofun.utils.VLog;
-import com.onesignal.OneSignal;
-import com.google.android.gms.analytics.Tracker;
+
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -22,9 +18,7 @@ import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
-
-import com.vn.otofun.utils.Configs;
+//import com.google.android.gms.analytics.Tracker;
 
 /**
  * Created by AnhVT on 6/24/15.
@@ -46,10 +40,6 @@ public class OtofunApplication extends Application {
         super.onCreate();
 
 //        savedStateMap = new HashMap<String, Fragment.SavedState>();
-//        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-//                .setDefaultFontPath("fonts/Roboto-Regular.ttf")
-//                .setFontAttrId(R.attr.fontPath)
-//                .build());
 //
 //        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
 //        Configs.IS_FIRST_USAGE = preferences.getBoolean("IS_FIRST_USAGE", false);
@@ -71,9 +61,9 @@ public class OtofunApplication extends Application {
             }
         });
 
-        AnalyticsTrackers.initialize(this);
-        Tracker tracker = AnalyticsTrackers.getInstance().get(AnalyticsTrackers.Target.APP);
-        tracker.setClientId(Utils.getUUID(getApplicationContext()));
+        // AnalyticsTrackers.initialize(this);
+        // Tracker tracker = AnalyticsTrackers.getInstance().get(AnalyticsTrackers.Target.APP);
+        // tracker.setClientId(Utils.getUUID(getApplicationContext()));
 
     }
 

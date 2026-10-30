@@ -26,7 +26,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"/>
 
-        <com.rey.material.widget.Button
+        <Button
             android:id="@+id/dialog_list_items_close_button"
             style="@style/IconButtonStyle"
             android:layout_width="48dp"
@@ -54,7 +54,7 @@
         android:layout_height="@dimen/DIVIDER_HEIGHT"
         android:background="#c9c9c9"/>
 
-    <com.rey.material.widget.Button
+    <Button
         android:id="@+id/dialog_list_items_confirm_button"
         style="@style/FlatWaveButtonRippleStyle"
         android:layout_width="match_parent"

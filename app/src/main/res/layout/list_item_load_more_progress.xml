@@ -11,7 +11,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
-    <com.rey.material.widget.ProgressView
+    <ProgressBar
         android:id="@+id/list_item_load_more_progress_progressView"
         android:layout_width="32dp"
         android:layout_height="32dp"

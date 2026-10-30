@@ -10,23 +10,25 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.TaskStackBuilder;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.core.app.TaskStackBuilder;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.content.DialogInterface;
 import android.content.ContentValues;
 
 import com.google.firebase.analytics.FirebaseAnalytics;
 
+/*
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+*/
 import com.google.gson.internal.LinkedTreeMap;
 import com.vn.otofun.activities.ThreadsActivity;
 import com.vn.otofun.activities.SettingActivity;
@@ -47,13 +49,13 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.app.NotificationManager;
 
-import com.rey.material.widget.ListView;
+import android.widget.ListView;
 import com.onesignal.OneSignal;
 import com.onesignal.shortcutbadger.ShortcutBadger;
 
 import org.json.JSONObject;
 
-import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+//import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 import com.vn.otofun.fragments.dialogs.NoticeDialogFragment;
 import com.vn.otofun.utils.Configs;
@@ -153,6 +155,11 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
 
         setContentView(R.layout.activity_base);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.background_main_dark));
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.background_main_dark));
+        }
+
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) {
             overridePendingTransition(R.anim.activity_in, R.anim.activity_out);
         } else {
@@ -222,7 +229,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
 
     @Override
     protected void attachBaseContext(Context base) {
-        super.attachBaseContext(CalligraphyContextWrapper.wrap(base));
+        super.attachBaseContext(base);
     }
 
     @Override
@@ -625,6 +632,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
     }
 
     public void initGoogleAdmob() {
+        /*
         try {
             Prefs p = new Prefs(this);
             String activeDaysString = p.getConfigByKey(Configs.k_ad_active_day);
@@ -653,9 +661,11 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
         } catch (Exception e) {
             e.printStackTrace();
         }
+        */
     }
 
     public void showGoogleAdmob(final Intent intent, final boolean isFinish) {
+        /*
         VLog.d("");
         boolean isLoaded = false;
         if (mInterstitialAd != null) {
@@ -680,9 +690,12 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
         if (isLoaded == false) {
             openNewActivity(intent, isFinish);
         }
+        */
+        openNewActivity(intent, isFinish);
     }
 
     private void requestNewInterstitial() {
+        /*
         VLog.d("");
         if (mInterstitialAd != null) {
             AdRequest adRequest = new AdRequest.Builder()
@@ -691,6 +704,7 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
 
             mInterstitialAd.loadAd(adRequest);
         }
+        */
     }
 
     public void showPushNotification() {

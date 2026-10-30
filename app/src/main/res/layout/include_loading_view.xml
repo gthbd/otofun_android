@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:visibility="gone">
 
-    <com.rey.material.widget.ProgressView
+    <ProgressBar
         android:id="@+id/include_loading_view_progressView"
         android:layout_width="@dimen/LOADING_WIDTH"
         android:layout_height="@dimen/LOADING_HEIGHT"
