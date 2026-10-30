@@ -32,6 +32,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
+
+        <!-- Google Mobile Ads App ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
             android:exported="false"

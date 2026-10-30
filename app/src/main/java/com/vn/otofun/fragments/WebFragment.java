@@ -26,11 +26,8 @@ import com.vn.otofun.data.Prefs;
 import com.vn.otofun.utils.Configs;
 import com.vn.otofun.utils.VLog;
 import com.vn.otofun.utils.Commons;
-/*
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.AdSize;
- */
 import java.util.Locale;
 
 /**
@@ -48,7 +45,7 @@ public class WebFragment extends BaseFragment {
     int mStar = 0;
     int mThreadID = 0;
     String mOriginURL = "";
-    // private AdView mAdView;
+    private AdView mAdView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -176,13 +173,11 @@ public class WebFragment extends BaseFragment {
             }
         });
 
-        //mAdView = (AdView) view.findViewById(R.id.fragment_web_adview);
-//        mAdView.setAdSize(AdSize.BANNER);
-//        mAdView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");//test
-//        mAdView.setAdUnitId("ca-app-pub-4411026643591265/5172454061");
-
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+        mAdView = (AdView) view.findViewById(R.id.fragment_web_adview);
+        if (mAdView != null) {
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mAdView.loadAd(adRequest);
+        }
 
         return view;
     }

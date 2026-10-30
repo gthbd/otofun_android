@@ -3,6 +3,7 @@ package com.vn.otofun;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -10,60 +11,62 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.core.app.TaskStackBuilder;
-import androidx.drawerlayout.widget.DrawerLayout;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.webkit.WebView;
+import android.widget.ListView;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import android.content.DialogInterface;
-import android.content.ContentValues;
+import androidx.core.app.TaskStackBuilder;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
+import androidx.annotation.NonNull;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.gson.internal.LinkedTreeMap;
+import com.onesignal.OneSignal;
+import com.onesignal.shortcutbadger.ShortcutBadger;
+import com.vn.otofun.activities.HomeActivity;
+import com.vn.otofun.activities.SettingActivity;
+import com.vn.otofun.activities.ThreadsActivity;
+import com.vn.otofun.activities.WebActivity;
+import com.vn.otofun.data.Prefs;
+import com.vn.otofun.fragments.dialogs.NoticeDialogFragment;
+import com.vn.otofun.utils.Commons;
+import com.vn.otofun.utils.Configs;
+import com.vn.otofun.utils.Connector;
+import com.vn.otofun.utils.MapHelper;
+import com.vn.otofun.utils.SecretHttpResponseHandler;
+import com.vn.otofun.utils.Utils;
+import com.vn.otofun.utils.VLog;
+
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Locale;
 
 /*
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 */
-import com.google.gson.internal.LinkedTreeMap;
-import com.vn.otofun.activities.ThreadsActivity;
-import com.vn.otofun.activities.SettingActivity;
-import com.vn.otofun.activities.HomeActivity;
-import com.vn.otofun.activities.WebActivity;
-import com.vn.otofun.utils.MapHelper;
-import com.vn.otofun.utils.VLog;
-import com.vn.otofun.utils.Connector;
-import com.vn.otofun.utils.SecretHttpResponseHandler;
-import com.vn.otofun.utils.Utils;
-import com.vn.otofun.utils.Commons;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.webkit.WebView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
-import android.app.NotificationManager;
-
-import android.widget.ListView;
-import com.onesignal.OneSignal;
-import com.onesignal.shortcutbadger.ShortcutBadger;
-
-import org.json.JSONObject;
-
 //import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
-
-import com.vn.otofun.fragments.dialogs.NoticeDialogFragment;
-import com.vn.otofun.utils.Configs;
 //import com.vn.otofun.utils.Connector;
-import com.vn.otofun.data.Prefs;
-
-import java.util.HashMap;
-import java.util.Locale;
 
 /**
  * Ceated by hung on 6/4/15.
@@ -73,7 +76,9 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
     NoticeDialogFragment mServerErrorDialog;
     private FirebaseAnalytics mFirebaseAnalytics;
 
-    //private InterstitialAd mInterstitialAd = null;
+    private InterstitialAd mInterstitialAd = null;
+    private Intent mPendingIntent = null;
+    private boolean mPendingIsFinish = false;
     private Handler mMainUIHandler = new Handler();
 
     protected Toolbar mToolBar;
@@ -632,26 +637,15 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
     }
 
     public void initGoogleAdmob() {
-        /*
         try {
             Prefs p = new Prefs(this);
             String activeDaysString = p.getConfigByKey(Configs.k_ad_active_day);
             if (activeDaysString != null) {
                 long activeDays = (long) Float.parseFloat(activeDaysString);
                 VLog.d("active day: " + activeDays);
-//                activeDays = 0; //only test
                 if (activeDays <= 0) {
                     if (mInterstitialAd == null) {
                         VLog.d("Khoi tao google admob");
-                        mInterstitialAd = new InterstitialAd(this);
-
-                        mInterstitialAd.setAdUnitId("ca-app-pub-4411026643591265/3422102833");
-//                        mInterstitialAd.setAdListener(new AdListener() {
-//                            @Override
-//                            public void onAdClosed() {
-//                                requestNewInterstitial();
-//                            }
-//                        });
                         requestNewInterstitial();
                     }
                 } else {
@@ -661,50 +655,59 @@ public abstract class BaseActivity extends AppCompatActivity implements OneButto
         } catch (Exception e) {
             e.printStackTrace();
         }
-        */
     }
 
     public void showGoogleAdmob(final Intent intent, final boolean isFinish) {
-        /*
         VLog.d("");
-        boolean isLoaded = false;
         if (mInterstitialAd != null) {
-            if (mInterstitialAd.isLoaded()) {
-                VLog.d("show admob ok");
-                isLoaded = true;
-                mInterstitialAd.show();
-
-                mInterstitialAd.setAdListener(new AdListener() {
-                    @Override
-                    public void onAdClosed() {
-                        openNewActivity(intent, isFinish);
-                    }
-                });
-
-            }
-            if (!isFinish) {
-                requestNewInterstitial();
-            }
-        }
-
-        if (isLoaded == false) {
+            VLog.d("show admob ok");
+            mPendingIntent = intent;
+            mPendingIsFinish = isFinish;
+            mInterstitialAd.show(this);
+        } else {
             openNewActivity(intent, isFinish);
         }
-        */
-        openNewActivity(intent, isFinish);
     }
 
     private void requestNewInterstitial() {
-        /*
         VLog.d("");
-        if (mInterstitialAd != null) {
-            AdRequest adRequest = new AdRequest.Builder()
-                    .addTestDevice("28A40109F4B84F71B78FB450CD0F7695") //may Lenovo
-                    .build();
+        AdRequest adRequest = new AdRequest.Builder().build();
+        InterstitialAd.load(this, "ca-app-pub-4411026643591265/3422102833", adRequest,
+            new InterstitialAdLoadCallback() {
+                @Override
+                public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                    VLog.d("AdMob Interstitial Loaded");
+                    mInterstitialAd = interstitialAd;
+                    mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            VLog.d("AdMob Interstitial Dismissed");
+                            mInterstitialAd = null;
+                            if (mPendingIntent != null) {
+                                openNewActivity(mPendingIntent, mPendingIsFinish);
+                                mPendingIntent = null;
+                            }
+                            requestNewInterstitial();
+                        }
 
-            mInterstitialAd.loadAd(adRequest);
-        }
-        */
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            VLog.d("AdMob Interstitial Failed to Show: " + adError.getMessage());
+                            mInterstitialAd = null;
+                            if (mPendingIntent != null) {
+                                openNewActivity(mPendingIntent, mPendingIsFinish);
+                                mPendingIntent = null;
+                            }
+                        }
+                    });
+                }
+
+                @Override
+                public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                    VLog.d("AdMob Interstitial Failed to Load: " + loadAdError.getMessage());
+                    mInterstitialAd = null;
+                }
+            });
     }
 
     public void showPushNotification() {
